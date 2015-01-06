@@ -1,0 +1,34 @@
+              
+
+src=Sine()
+src1=Sine()
+src2=Sine()
+
+ 
+Sig(src)                      16600
+Sig(src).out()                 8900
+Sig(src,mul=src1,add=src2)     5800
+Thresh(src)                    5300
+Tone(src)                      5000
+SDelay(src)                    3350
+Sine()                         2950
+Delay(src)                     1900
+Waveguide(src)                 1800
+Biquad(src)                    1350
+Count(src)                     1800
+SineLoop()                     1150
+LFO()                           460
+Freeverb(src)                   370
+Biquadx(src)                    350
+FourBand(src)                   350
+Blit()                          280
+WGVerb(src)                     230
+FFT(src)                        145
+
+
+
+
+Convolve(src,Table(size=64))      98
+Convolve(src,Table(size=128))     49
+Convolve(src,Table(size=256))     25
+Convolve(src,Table(size=512))     13  

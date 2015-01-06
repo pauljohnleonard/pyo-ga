@@ -1,0 +1,4 @@
+Convolve(src,Table(size=64))      98
+Convolve(src,Table(size=128))     49
+Convolve(src,Table(size=256))     25
+Convolve(src,Table(size=512))     13  (possibly allocation influences)

@@ -1,0 +1,12 @@
+Beat
+    bpm
+    trigger,pos
+    
+    
+OffBeat
+    pos,trig_id
+    trigger
+    
+
+    
+    

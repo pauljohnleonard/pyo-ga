@@ -1,0 +1,21 @@
+from pyo import *
+from ga import  *
+s=Server().boot()
+pheno=Pheno()
+BeatGene(pheno,build=True,bpm=60)
+NoiseGene(pheno,build=True)
+OffBeatGene(pheno,build=True,pos=0.144959150804)
+OffBeatGene(pheno,build=True,pos=0.0786903694065)
+OffBeatGene(pheno,build=True,pos=0.52635526633)
+EnvelopeGene(pheno,build=True,dur=0.05,trig=2)
+EnvelopeGene(pheno,build=True,dur=0.05,trig=1)
+EnvelopeGene(pheno,build=True,dur=0.05,trig=2)
+ModulatedNoiseGene(pheno,build=True,env=2,noise=0)
+ModulatedNoiseGene(pheno,build=True,env=1,noise=0)
+ModulatedNoiseGene(pheno,build=True,env=0,noise=0)
+VoiceGene(pheno,build=True,freq=127.153106008,input=2,mul=0.332203451223,q=14.4709845462,type=2)
+VoiceGene(pheno,build=True,freq=3809.63203784,input=0,mul=-0.580109745103,q=3.42183064295,type=2)
+VoiceGene(pheno,build=True,freq=17250.98768,input=2,mul=1.53399564415,q=24.2293026569,type=2)
+print pheno.nome
+pheno.play()
+s.gui(locals())
